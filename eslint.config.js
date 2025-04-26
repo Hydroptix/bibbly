@@ -20,7 +20,15 @@ export default ts.config(
 		languageOptions: {
 			globals: { ...globals.browser, ...globals.node }
 		},
-		rules: { 'no-undef': 'off' }
+		rules: {
+			'no-undef': 'error',
+			'no-unused-vars': 'error',
+			'no-console': 'warn',
+			'svelte/block-lang': [
+				'error',
+				{ script: ['typescript'] },
+			],
+		}
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],

@@ -141,3 +141,6 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij
+
+# Don't commit huge images to the project
+/static/images/
